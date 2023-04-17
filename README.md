@@ -11,7 +11,7 @@ The project is structured as follows:
 - img/: a folder containing the images used on the website.
 
 ## **Getting Started**
-To view the website, simply visit the following link: [https://katleenalves.github.io/Portfolio/](https://myportfolio.com)
+To view the website, simply visit the following link: [https://katleenalves.github.io/Portfolio/](https://katleenalves.github.io/Portfolio/)
 
 ## **Technologies Used**
 The website was built using HTML, CSS, and JavaScript.
