@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: linear-gradient(to bottom, #c8ecd3, #ffffff);
+}
+a {
+  font-family: 'Alkatra', cursive;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(10, 59, 4);
+}
+
+.logo {
+  font-family: 'Alkatra', cursive;
+  cursor: pointer;
+  padding: 0 30px;
+  color: rgb(10, 59, 4);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #ffffff, #def7e6 50%, #c8ecd3);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 20px 30px;
+  position: relative;
+}
+
+.navbar ul li:hover {
+  background-color: rgb(195, 243, 217);
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgb(192, 255, 208);
+}
+
+.dropdown ul {
+  display: block;
+}
+
+.dropdown ul li {
+  display: none;
+}
+
+.navbar ul li:hover .dropdown ul li {
+  display: block;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    position: absolute;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar ul li {
+    border-top: 1px solid rgb(8, 37, 2);
+    text-align: center;
+  }
+  .navbar ul li:hover .dropdown ul li {
+    display: none;
+  }
+}

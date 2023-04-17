@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Katleent Alves</title>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Katleen Alves</h1>
+      <ul>
+        <li><a href="#about-me">ABOUT ME</a></li>
+        <li>
+          <a href="#my-skills">MY SKILLS</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#Web-dev">Web development</a></li>
+              <li><a href="#it-freels">IT freelancers</a></li>
+              <li><a href="#web-apps">Web Apps</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#contact-me">CONTACT ME</a></li>
+      </ul>
+    </div>
+    <section class="typewriter">
+      <h1 id="typewriter">Hello You!</h1>
+      <p class="typewriter-text">
+        Welcome to my site/portfolio, <br />browse around and find out more
+        about me ;)
+      </p>
+    </section>
+    <div class="social-icons">
+      <a href="https://github.com/KatleenAlves" target="_blank">
+        <img src="img/svg.png" alt="Ícone do GitHub" />
+      </a>
+      <a href="https://www.instagram.com/katalvess/" target="_blank">
+        <img src="img/Frame.png" alt="Ícone do Instagram" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/katleen-alves-7418b3128/"
+        target="_blank"
+      >
+        <img src="img/linkedin.png" alt="Ícone do LinkedIn" />
+      </a>
+    </div>
+    <div class="warning">
+      <marquee behavior="scroll" direction="left">Warning this site is under construction!</marquee>
+    </div>
+    
+    <section id="about-me" class="hidden animate-on-scroll">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-container">
+              <img src="img/katleen.jpg" alt="Profile Picture" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-container">
+              <h2>About Me</h2>
+              <p>
+                My name is Katleen Alves and I am a recent graduate in Systems Analysis and Development from PUCPR University Brazil, I am focused on web development and this site is a way to show a little about my personal work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="my-skills" class="hidden animate-on-scroll">
+      <h1>My Skills</h1>
+      <div class="card-container">
+        <div id="Web-dev" class="card" onclick="window.location.href='projectspage.html';">
+          <img src="img/webPrograming.png" alt="Imagem 1" />
+          <h2>Web Development</h2>
+          <p>HTML, CSS & JavaScript</p>
+        </div>
+        <div id="it-freels" class="card" onclick="location.href='sua_pagina_aqui.html';">
+          <img src="img/ItFreelancer.gif" alt="Imagem 2" />
+          <h2>IT Freelancers</h2>
+          <p>Home PC Repairs</p>
+        </div>
+        <div id="web-apps" class="card" onclick="location.href='sua_pagina_aqui.html';">
+          <img src="img/webApps.png" alt="Imagem 3" />
+          <h2>Web Apps</h2>
+          <p>Coming soon</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact-me" class="hidden animate-on-scroll" >
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>  
+  </body>
+  <footer>
+    <p>&copy; 2023 Katleen Alves. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</html>
